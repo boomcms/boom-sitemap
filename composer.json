@@ -11,5 +11,8 @@
             "email": "rob@uxblondon.com"
         }
     ],
+    "autoload": {
+        "psr-0": {"Boom": "classes/"}
+    },
     "minimum-stability": "dev"
 }

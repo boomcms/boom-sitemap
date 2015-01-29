@@ -1,14 +1,11 @@
 <?php
 
-use Boom\Page;
-
-class Controller_Sitemap extends Boom\Controller
+class Controller_Sitemap extends Controller
 {
-	public function action_xml()
-	{
-		// Set an content-type header.
-		$this->response
-			->headers('Content-Type', 'text/xml')
-			->body(new Boom\Sitemap());
-	}
+    public function action_xml()
+    {
+        $this->response
+            ->headers('Content-Type', 'text/xml')
+            ->body(new Boom\Sitemap());
+    }
 }
