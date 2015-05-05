@@ -2,7 +2,7 @@
     "name": "boomcms/boom-sitemap",
     "description": "sitemap.xml generator for BoomCMS",
     "require": {
-        "boomcms/boom-core": "v2.0.*"
+        "boomcms/boom-core": "2.0.*"
     },
     "license": "BSD-3-Clause",
     "authors": [
