@@ -2,17 +2,17 @@
     "name": "boomcms/boom-sitemap",
     "description": "sitemap.xml generator for BoomCMS",
     "require": {
-        "boomcms/boom-core": "2.*"
+        "boomcms/boom-core": "3.*"
     },
-    "license": "BSD-3-Clause",
+    "license": "MIT",
     "authors": [
         {
             "name": "Rob Taylor",
             "email": "rob@uxblondon.com"
         }
     ],
-    "autoload": {
-        "classmap": ["classes/Boom/", "classes/Controller/"]
-    },
+	"autoload": {
+		"psr-0": {"BoomCMS\\Robots": "src/"}
+	},
     "minimum-stability": "dev"
 }

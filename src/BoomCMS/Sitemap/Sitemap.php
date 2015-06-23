@@ -1,13 +1,13 @@
 <?php
 
-namespace Boom\Sitemap;
+namespace BoomCMS\Sitemap;
 
-use Boom\Page;
+use BoomCMS\Page\Page;
 use View;
 
 class Sitemap
 {
-    private $viewDirectory = 'boom/sitemap';
+    private $viewDirectory = 'boom::sitemap';
 
     /**
      * Array of items to show in the sitemap.
