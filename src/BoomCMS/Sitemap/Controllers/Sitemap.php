@@ -8,10 +8,10 @@ use Illuminate\Routing\Controller;
 
 class Sitemap extends Controller
 {
-    public function xml()
+    public function view()
     {
 		return (new Response())
             ->header('Content-Type', 'text/xml')
-            ->body(new Map());
+            ->setContent(new Map());
     }
 }

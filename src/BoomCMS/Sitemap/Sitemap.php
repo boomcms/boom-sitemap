@@ -2,7 +2,7 @@
 
 namespace BoomCMS\Sitemap;
 
-use BoomCMS\Page\Page;
+use BoomCMS\Core\Page\Finder;
 use View;
 
 class Sitemap
@@ -43,7 +43,7 @@ class Sitemap
         $items = [];
 
         foreach ($this->getPages() as $page) {
-            $items[] = new Item($page->url(), $page->getLastModified());
+            $items[] = new Item((string) $page->url(), $page->getLastModified());
         }
 
         return $items;
@@ -51,8 +51,8 @@ class Sitemap
 
     private function getPages()
     {
-        $finder = new Page\Finder;
-        $finder->addFilter(new Page\Finder\Filter\VisibleToSearchEngines());
+        $finder = new Finder\Finder;
+        $finder->addFilter(new Finder\VisibleToSearchEngines());
 
         return $finder->findAll();
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Boom\Sitemap;
+namespace BoomCMS\Sitemap;
 
 use DateTime;
 
