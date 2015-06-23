@@ -12,7 +12,7 @@
         }
     ],
 	"autoload": {
-		"psr-0": {"BoomCMS\\Robots": "src/"}
+		"psr-0": {"BoomCMS\\Sitemap": "src/"}
 	},
     "minimum-stability": "dev"
 }
