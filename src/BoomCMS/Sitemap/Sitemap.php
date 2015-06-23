@@ -3,7 +3,7 @@
 namespace BoomCMS\Sitemap;
 
 use BoomCMS\Core\Page\Finder;
-use View;
+use Illuminate\Support\Facades\View;
 
 class Sitemap
 {
@@ -59,7 +59,7 @@ class Sitemap
 
     public function render($format = 'xml')
     {
-        return new View($this->viewDirectory . '/' . $format, array(
+        return View::make($this->viewDirectory . '/' . $format, array(
             'items' => $this->getItems(),
         ));
     }
