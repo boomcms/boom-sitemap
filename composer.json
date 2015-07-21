@@ -2,7 +2,10 @@
     "name": "boomcms/boom-sitemap",
     "description": "sitemap.xml generator for BoomCMS",
     "require": {
-        "boomcms/boom-core": "3.*"
+        "boomcms/boom-core": ">=3.0"
+    },
+    "require-dev": {
+        "boomcms/boom-core": "dev-master"
     },
     "license": "MIT",
     "authors": [
