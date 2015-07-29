@@ -14,8 +14,8 @@
             "email": "rob@uxblondon.com"
         }
     ],
-	"autoload": {
-		"psr-4": {"BoomCMS\\": "src/"}
-	},
+        "autoload": {
+            "psr-4": {"BoomCMS\\": "src/BoomCMS/"}
+    },
     "minimum-stability": "dev"
 }
