@@ -1,10 +1,10 @@
 <?php
 
-namespace BoomCMS\Sitemap;
+namespace BoomCMS\ServiceProviders;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
-class ServiceProvider extends BaseServiceProvider
+class SitemapServiceProvider extends BaseServiceProvider
 {
     /**
 	 * Bootstrap any application services.

@@ -1,3 +1,3 @@
 <?php
 
-Route::get('sitemap.xml', 'BoomCMS\Sitemap\Controllers\Sitemap@view');
+Route::get('sitemap.xml', 'BoomCMS\Http\Controllers\Sitemap@view');

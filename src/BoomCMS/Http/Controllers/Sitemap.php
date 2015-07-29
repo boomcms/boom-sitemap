@@ -1,6 +1,6 @@
 <?php
 
-namespace BoomCMS\Sitemap\Controllers;
+namespace BoomCMS\Http\Controllers;
 
 use BoomCMS\Sitemap\Sitemap as Map;
 use Illuminate\Http\Response;
