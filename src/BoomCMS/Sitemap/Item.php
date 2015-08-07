@@ -7,13 +7,11 @@ use DateTime;
 class Item
 {
     /**
-     *
      * @var string
      */
     private $url;
 
     /**
-     *
      * @var DateTime
      */
     private $lastModified;

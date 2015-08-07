@@ -10,7 +10,7 @@ class Sitemap extends Controller
 {
     public function view()
     {
-		return (new Response())
+        return (new Response())
             ->header('Content-Type', 'text/xml')
             ->setContent(new Map());
     }
