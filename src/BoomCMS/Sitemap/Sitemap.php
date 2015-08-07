@@ -51,7 +51,7 @@ class Sitemap
 
     private function getPages()
     {
-        $finder = new Finder\Finder;
+        $finder = new Finder\Finder();
         $finder->addFilter(new Finder\VisibleToSearchEngines());
 
         return $finder->findAll();
@@ -59,8 +59,8 @@ class Sitemap
 
     public function render($format = 'xml')
     {
-        return View::make($this->viewDirectory . '/' . $format, array(
+        return View::make($this->viewDirectory.'/'.$format, [
             'items' => $this->getItems(),
-        ));
+        ]);
     }
 }

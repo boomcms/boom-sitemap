@@ -7,21 +7,20 @@ use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 class SitemapServiceProvider extends BaseServiceProvider
 {
     /**
-	 * Bootstrap any application services.
-	 *
-	 * @return void
-	 */
+     * Bootstrap any application services.
+     *
+     * @return void
+     */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__ . '/../../views/boom', 'boom');
-				
-        include __DIR__ . '/../../routes.php';
+        $this->loadViewsFrom(__DIR__.'/../../views/boom', 'boom');
+
+        include __DIR__.'/../../routes.php';
     }
 
     /**
-	 *
-	 * @return void
-	 */
+     * @return void
+     */
     public function register()
     {
     }
