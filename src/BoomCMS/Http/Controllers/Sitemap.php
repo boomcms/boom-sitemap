@@ -4,9 +4,8 @@ namespace BoomCMS\Http\Controllers;
 
 use BoomCMS\Sitemap\Sitemap as Map;
 use Illuminate\Http\Response;
-use Illuminate\Routing\Controller;
 
-class Sitemap extends Controller
+class Sitemap extends \Illuminate\Routing\Controller
 {
     public function view()
     {
