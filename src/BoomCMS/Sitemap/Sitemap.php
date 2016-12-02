@@ -2,7 +2,7 @@
 
 namespace BoomCMS\Sitemap;
 
-use BoomCMS\Core\Page\Finder;
+use BoomCMS\Page\Finder;
 use Illuminate\Support\Facades\View;
 
 class Sitemap
